@@ -176,6 +176,24 @@
   .value-card {
     background: #fff; padding: 40px;
     border: 1px solid #E8E8E8; text-align: center;
+    display: flex; flex-direction: column;
+  }
+  .value-card-features {
+    flex: 1;
+    margin: 12px 0;
+  }
+  .value-card-feature {
+    color: #666;
+    font-size: 14px;
+    padding: 8px 0;
+    border-bottom: 1px solid #F0F0F0;
+  }
+  .value-card-feature:last-child {
+    border-bottom: none;
+  }
+  .value-card-price {
+    margin-top: auto;
+    padding-top: 16px;
   }
   .value-icon {
     width: 56px; height: 56px; background: #F5F5F0;
@@ -459,57 +477,68 @@
         <div class="value-card">
           <div class="value-icon" style="font-size:16px; font-weight:800;">$</div>
           <h3>Régulier</h3>
-          <ul style="color:#666; font-size:14px; padding-left:20px; margin:12px 0; text-align:left;">
-            <li>2 lavages</li>
-            <li>2 rinçages</li>
-            <li>Séchage</li>
-          </ul>
-          <p style="font-size:24px; font-weight:800; margin-top:12px;">11,99 $</p>
-          <p style="font-size:12px; color:#999;">+ taxes</p>
+          <div class="value-card-features">
+            <div class="value-card-feature">2 lavages</div>
+            <div class="value-card-feature">2 rinçages</div>
+            <div class="value-card-feature">Séchage</div>
+          </div>
+          <div class="value-card-price">
+            <p style="font-size:24px; font-weight:800;">11,99 $</p>
+            <p style="font-size:12px; color:#999;">+ taxes</p>
+          </div>
         </div>
         <div class="value-card">
           <div class="value-icon" style="font-size:16px; font-weight:800;">$$</div>
           <h3>Deluxe</h3>
-          <ul style="color:#666; font-size:14px; padding-left:20px; margin:12px 0; text-align:left;">
-            <li>2 lavages</li>
-            <li>2 rinçages</li>
-            <li>Jets dans les bas de caisse</li>
-            <li>Jets en dessous du véhicule</li>
-            <li>Séchage</li>
-          </ul>
-          <p style="font-size:24px; font-weight:800; margin-top:12px;">13,99 $</p>
-          <p style="font-size:12px; color:#999;">+ taxes</p>
+          <div class="value-card-features">
+            <div class="value-card-feature">2 lavages</div>
+            <div class="value-card-feature">2 rinçages</div>
+            <div class="value-card-feature">Jets dans les bas de caisse</div>
+            <div class="value-card-feature">Jets en dessous du véhicule</div>
+            <div class="value-card-feature">Séchage</div>
+          </div>
+          <div class="value-card-price">
+            <p style="font-size:24px; font-weight:800;">13,99 $</p>
+            <p style="font-size:12px; color:#999;">+ taxes</p>
+          </div>
         </div>
         <div class="value-card">
           <div class="value-icon" style="font-size:16px; font-weight:800;">$$</div>
           <h3>Deluxe + cire</h3>
-          <ul style="color:#666; font-size:14px; padding-left:20px; margin:12px 0; text-align:left;">
-            <li>2 lavages</li>
-            <li>2 rinçages</li>
-            <li>Jets dans les bas de caisse</li>
-            <li>Jets en dessous du véhicule</li>
-            <li>Cire trois couleurs</li>
-            <li>Séchage</li>
-          </ul>
-          <p style="font-size:24px; font-weight:800; margin-top:12px;">14,99 $</p>
-          <p style="font-size:12px; color:#999;">+ taxes</p>
+          <div class="value-card-features">
+            <div class="value-card-feature">2 lavages</div>
+            <div class="value-card-feature">2 rinçages</div>
+            <div class="value-card-feature">Jets dans les bas de caisse</div>
+            <div class="value-card-feature">Jets en dessous du véhicule</div>
+            <div class="value-card-feature">Cire trois couleurs</div>
+            <div class="value-card-feature">Séchage</div>
+          </div>
+          <div class="value-card-price">
+            <p style="font-size:24px; font-weight:800;">14,99 $</p>
+            <p style="font-size:12px; color:#999;">+ taxes</p>
+          </div>
         </div>
         <div class="value-card" style="border-color:#2D2D2D;">
           <div class="value-icon" style="font-size:16px; font-weight:800;">$$$</div>
           <h3>Suprême</h3>
-          <ul style="color:#666; font-size:14px; padding-left:20px; margin:12px 0; text-align:left;">
-            <li>Rinçage avant lavage</li>
-            <li>2 lavages</li>
-            <li>2 rinçages</li>
-            <li>Jets dans les bas de caisse</li>
-            <li>Jets en dessous du véhicule</li>
-            <li>Cire trois couleurs</li>
-            <li>Cire translucide</li>
-            <li>Séchage</li>
-          </ul>
-          <p style="font-size:24px; font-weight:800; margin-top:12px;">15,99 $</p>
-          <p style="font-size:12px; color:#999;">+ taxes</p>
+          <div class="value-card-features">
+            <div class="value-card-feature">Rinçage avant lavage</div>
+            <div class="value-card-feature">2 lavages</div>
+            <div class="value-card-feature">2 rinçages</div>
+            <div class="value-card-feature">Jets dans les bas de caisse</div>
+            <div class="value-card-feature">Jets en dessous du véhicule</div>
+            <div class="value-card-feature">Cire trois couleurs</div>
+            <div class="value-card-feature">Cire translucide</div>
+            <div class="value-card-feature">Séchage</div>
+          </div>
+          <div class="value-card-price">
+            <p style="font-size:24px; font-weight:800;">15,99 $</p>
+            <p style="font-size:12px; color:#999;">+ taxes</p>
+          </div>
         </div>
+      </div>
+      <div class="wf-annotation" style="margin-top:24px;">
+        Question pour le client : Pourriez-vous clarifier ce que signifie "2 lavages" dans les forfaits? Est-ce qu'il s'agit de deux lavages distincts ou d'un cycle de lavage complet en deux étapes?
       </div>
     </section>
 
